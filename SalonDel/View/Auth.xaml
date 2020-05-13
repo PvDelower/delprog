@@ -1,0 +1,15 @@
+﻿<Window x:Class="bd.View.Auth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bd.View"
+        mc:Ignorable="d"
+        Title="Аунтификаця" Height="224.426" Width="300.655">
+    <Grid>
+        <TextBox Height="23" Margin="10,50,10,0" TextWrapping="Wrap" Text="{Binding Path=Login}" VerticalAlignment="Top"/>
+        <TextBox Height="23" Margin="10,96,10,0" TextWrapping="Wrap" Text="{Binding Path=Password}" VerticalAlignment="Top"/>
+        <Button Command="{Binding Path=LoginCommand}" VerticalAlignment="Bottom" Content="LOG IN" Margin="10,0,10.2,10" Height="38"/>
+
+    </Grid>
+</Window>
